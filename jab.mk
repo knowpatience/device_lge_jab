@@ -18,8 +18,8 @@ $(call inherit-product-if-exists, vendor/google/device-partial.mk)
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MOB30P/2960889:user/release-keys \
-    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MOB30P 2960889 release-keys" \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MOB30Y/3067468:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MOB30Y 3067468 release-keys" \
     BUILD_ID=MOB30P
 
 # Reduce client buffer size for fast audio output tracks
@@ -34,5 +34,6 @@ PRODUCT_PACKAGES += \
     FakeNexusProvision \
     Terminal \
     libjni_terminal \
+    busybox \
 
 PRODUCT_NAME := jab
